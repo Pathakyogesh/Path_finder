@@ -12,7 +12,7 @@ def backened(src, obstacles, destination):
                 min_index = v
         return min_index
 
-    graph, size = copy.deepcopy(adjancy_matrix_gen.return_matrix())    # returns adjacency matrix and size
+    graph, size = copy.deepcopy(matrix_gen.return_matrix())    # returns adjacency matrix and size
     parent = [-2 for i in range(400)]                   # every vertex keep track of its parent vertex
 
     for value in obstacles:                             # gets every obstacle value from list
